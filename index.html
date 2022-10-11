@@ -16,10 +16,57 @@
     <meta name="keywords" content="ga, IT관련블로그, 경영정보">
     <meta name="author" content="Jinyoung">
     <title>Welcom to Jinyoung's Site</title>
+    <script src="https://kit.fontawesome.com/58de7999d2.js" crossorigin="anonymous"></script>
+    
+    <style>
+        *{
+            font-family:"맑은 고딕", Arial, Helvetica, sans-serif;
+            line-height: 150%;
+        }
+        body{
+            margin-top: 20px;
+            margin: 0 auto;
+            max-width: 980px;
+        }
+        header,footer{
+            height: 100px;
+        }
+        header h1{
+            display: inline;
+        }
+        footer{
+            background-color: gray;
+        }
+        nav{
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex: 4;
+        }
+        aside{
+            flex: 1;
+        }
+        ul {list-style-type: none;}
+        a {text-decoration: none;}
+        nav ul li{
+            display: inline;
+            padding: 15px 20px;
+            letter-spacing: 5px;
+        }
+        nav ul li:hover{
+            background-color: #15a3b6;
+        }
+        nav ul{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header id="home">
-        <img src="./images/logo.jpg" alt="CI">
+        <i class="fa-sharp fa-solid fa-bars"></i>
         <h1>Jinyoung Site</h1>
     </header>
     <nav>
@@ -33,6 +80,7 @@
 
     </nav>
     <section>
+        <div class="content">
         <article>
             <div class="bigdata">
                 <img src="./images/bigdata.jpg" alt="메인이미지" width="50%">
@@ -80,6 +128,7 @@
 
             </div>
         </article>
+        </div>
         <aside>
             <div class="link">
                 <a href="http:/mis.deu.ac.kr" target="_blank">경영정보학과 사이트</a> <br>
@@ -101,6 +150,10 @@
 
         </aside>
     </section>
-    <footer>저작권과 주소</footer>
+    <footer>저작권과 주소
+        <div class="sns">
+            <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
 </body>
 </html>
