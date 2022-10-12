@@ -17,30 +17,10 @@
     <meta name="author" content="Jinyoung">
     <title>Welcom to Jinyoung's Site</title>
     <script src="https://kit.fontawesome.com/58de7999d2.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-        *{
-            font-family:"맑은 고딕", Arial, Helvetica, sans-serif;
-            line-height: 150%;
-        }
-        body{
-            margin-top: 20px;
-            margin: 0 auto;
-            max-width: 980px;
-        }
-        header,footer{
-            height: 100px;
-        }
-        header h1{
-            display: inline;
-        }
-        footer{
-            background-color: gray;
-        }
-        nav{
-            height: 50px;
-        }
-        section{
+         section{
             display: flex;
         }
         .content{
@@ -48,19 +28,6 @@
         }
         aside{
             flex: 1;
-        }
-        ul {list-style-type: none;}
-        a {text-decoration: none;}
-        nav ul li{
-            display: inline;
-            padding: 15px 20px;
-            letter-spacing: 5px;
-        }
-        nav ul li:hover{
-            background-color: #15a3b6;
-        }
-        nav ul{
-            text-align: center;
         }
     </style>
 </head>
@@ -83,11 +50,11 @@
         <div class="content">
         <article>
             <div class="bigdata">
-                <img src="./images/bigdata.jpg" alt="메인이미지" width="50%">
+                <img src="./images/bigdata.jpg" class="w3-circle" alt="메인이미지" width="50%">
             </div>
             <div class="action">
                 <h2>나의 대외활동 이력</h2>
-                <table border="1">
+                <table class="w3-table-all w3-hoverable"> 
                     <tr>
                         <th>기간</th>
                         <th>대외활동내용</th>
@@ -129,8 +96,8 @@
             </div>
         </article>
         </div>
-        <aside>
-            <div class="link">
+        <aside class="w3-panel w3-border">
+            <div class="w3-panel w3-border">
                 <a href="http:/mis.deu.ac.kr" target="_blank">경영정보학과 사이트</a> <br>
                 <a href="./galley.html">갤러리</a> <br>
                 <a href="#home">시작이동</a>
@@ -138,12 +105,13 @@
             <div class="login">
                 <h2>로그인</h2>
                 <form action="#" method="get">
-                    회원ID<input type="text" name="id" id=""> <br>
-                    비밀번호 <input type="password" name="pw" id=""> <br>
+                    회원ID<input type="text"  class="w3-input" name="id" id=""> <br>
+                    비밀번호 <input type="password" class="w3-input" name="pw" id=""> <br>
                     남자 <input type="radio" name="gender" value="1" id="">
                     여자 <input type="radio" name="gender" value="2" id="">
-                    <input type="submit" value="로그인"> 
-                    <input type="reset" value="재설정">
+                    <br>
+                    <input type="submit" class="w3-button w3-black" value="로그인"> 
+                    <input type="reset" class="w3-button w3-black" value="재설정">
                    
                 </form>
             </div>
@@ -152,7 +120,10 @@
     </section>
     <footer>저작권과 주소
         <div class="sns">
-            <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/happinessjy65/">
+            <i class="fa-brands fa-instagram"></i></a>
+            <i class="fa-brands fa-facebook"></i>
+            
         </div>
     </footer>
 </body>
